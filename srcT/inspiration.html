@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bialetti Bolivia</title>
+   <!-- CSS STYLE FILE -->
+   <link rel="stylesheet" href="/resources/css/style.css">
+   <!-- Font Awesome Icons -->
+   <script src="https://kit.fontawesome.com/919c0a277c.js" crossorigin="anonymous"></script>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+   <!-- jQuery library -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+   <!-- Popper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <section id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" style="cursor: pointer;" onclick="redirect('../index.html')"><img src="../resources/sources/logo.webp" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('./moka-express.html')" href="#">MOKA EXPRESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('./bialetti-coffee-roasting.html')" href="#">TOSTADO DE CAFÉ BIALETTI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('./products.html')" href="#">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('./news.html')" href="#">NOTICIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('../index.html')" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="redirect('./history.html')">NUESTRA HISTORIA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="esenciaItaliana">
+    <div class="title-esencia">
+      <img id="logoEsencia" src="../resources/sources/logo-bialetti-hp.webp" alt="">
+      <p id="under-text">INSPIRACIÓN</p>
+      <h1 class="under-dev-h1"><i class="fa-solid fa-screwdriver-wrench"></i> Bajo Construcción <i class="fa-solid fa-screwdriver-wrench"></i></h1>
+      <div class="descubrelinesec">
+        <a onclick="redirect('../index.html')" href="#">Volver a página principal</a>
+        <div class="underline-link"></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="row left">
+            <img src="../resources/sources/logo-footer_4x (1).webp" alt="">
+            <h5>La esencia de la<br/>cultura del café italiano.</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right">
+            <h5>Contactos de la empresa</h5>
+            <a style="cursor: pointer; color: rgb(244, 244, 244);"><i class="fa-solid fa-pencil"></i>Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-copyright">
+      <a href="https://github.com/MathiasMendozaVargas" target="_blank"><i class="fa-brands fa-github"></i>Contactar Desarrollador</a>
+      <p><i class="fa-regular fa-copyright"></i>Hecho por Mathias Mendoza</p>
+    </div>
+  </footer>
+</body>
+<script>
+  function redirect(loc){
+    window.location.href=loc;
+  }
+</script>
+</html>
