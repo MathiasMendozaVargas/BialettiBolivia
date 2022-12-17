@@ -1,0 +1,604 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+html{
+   overflow-x: hidden;
+}
+
+body{
+   overflow-x: hidden;
+   font-family: 'Sriracha', cursive !important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top{
+   -webkit-backface-visibility: hidden !important;
+   position: fixed !important;
+}
+
+.navbar{
+   width: 100%;
+   height: 90px;
+   background-color: white !important;
+}
+
+.navbar-brand img{
+   width: 145px;
+}
+.navbar-nav{
+   font-size: 19px;
+}
+.navbar-collapse{
+   background-color:white;
+   padding: 10px;
+}
+.navbar-brand li{
+   padding-right: .7rem;
+}
+.navbar-nav li a{
+   position: relative !important;
+}
+.navbar-nav li a::after{
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 0.15rem;
+   left: 0;
+   bottom: 0;
+   color:  rgb(194, 194, 194);
+   background:  rgb(194, 194, 194);
+   transform-origin: left;
+   transition: all 0.8s;
+   transform: scaleX(0);
+}
+.navbar-nav li a:hover::after{
+   transform: scaleX(1);
+   color:  rgb(194, 194, 194) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+   color: white !important;
+   padding-top: .8rem !important;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+   color: rgb(194, 194, 194) !important;
+}
+.navbar-toggler:focus{
+   outline: none;
+}
+.nav-item{
+   margin-right: 12px;
+}
+
+
+/* HOME SECTION */
+#home{
+   background-color: black;
+}
+#home .carousel-item img{
+   
+   height: 100vh !important;
+   object-fit: cover !important;
+   object-position: center;
+}
+
+.carousel-caption{
+   width: max-content;
+   position: absolute !important;
+   right: 100% !important;
+   bottom: 43% !important;
+   left: 5% !important;
+   z-index: 1;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-right: 20px !important;
+   color: #fff;
+   text-align: left !important;
+}
+.carousel-caption h3{
+   font-size: 63px !important;
+   margin-bottom: -2px !important;
+   margin-left: 10px !important;
+}
+.carousel-caption p{
+   font-size: 24px !important;
+   margin-bottom: 32px;
+   margin-left: 10px !important;
+}
+.carousel-caption a{
+   background-color: #4d3424;
+   border-radius: 25px;
+   padding: 9.5px 25px;
+   font-size: 14px;
+   text-decoration: none;
+   color: whitesmoke;
+   transition: all 0.3s;
+}
+.carousel-caption a:hover{
+   background-color: whitesmoke;
+   color: black;
+   text-decoration: none;
+
+}
+
+.carousel .carousel-indicators li{
+   width: 0.625rem;
+   height: 0.625rem;
+   cursor: pointer;
+   border-radius: 50%;
+}
+
+.carousel-control-next, .carousel-control-prev{
+   width: 2% !important;
+}
+
+
+/* Esencia Italiana Section */
+#esenciaItaliana{
+   background-color: #4d3424 !important;
+}
+.title-esencia{
+   text-align: center;
+   padding: 150px 0px 50px 0px;
+}
+#logoEsencia{
+   width: 55px;
+}
+#under-text{
+   margin-top: 20px;
+   font-size: 15px;
+   color: rgba(168, 168, 168, 0.945);
+}
+.title-esencia h1{
+   color: rgb(223, 223, 223);
+   font-size: 70px;
+   justify-content: center;
+   margin-top: 50px;
+   margin-bottom: 30px;
+}
+.descubrelinesec{
+   width: fit-content;
+   margin: auto;
+   margin-bottom: 70px;
+}
+.title-esencia a{
+   font-size: 16px;
+   color: rgb(223, 223, 223);
+   transition: all 0.7s;
+}
+.title-esencia a:hover{
+   text-decoration: none;
+   font-size: 17px;
+   color: rgb(223, 223, 223);
+}
+.underline-link{
+   width: 100%;
+   margin: auto;
+   height: 0.8px;
+   background-color: rgb(223, 223, 223);
+}
+#home-product-1{
+   background: url("../sources/home/moka-express-box-hp.webp");
+   background-size: cover;
+   border-radius: 0% 0% 20% 0%;
+   width: 100%;
+   height: 580px;
+   justify-content: center;
+   background-color: aqua;
+   transition: all 0.5s;
+}
+#home-product-1:hover{
+   border-radius: 0% 20% 0% 0%;
+}
+#home-product-1 .container{
+   position: absolute;
+   bottom: 13%;
+   padding-left: 40px;
+}
+#home-product-1 .container h3{
+   font-size: 50px;
+   margin-left: 8px;
+   line-height: 0.7;
+}
+#home-product-1 .container p{
+   font-size: 20px;
+   margin-bottom: 20px;
+   margin-left: 8px;
+}
+#product-button-1{
+   background-color: #4d3424;
+   color: whitesmoke;
+   border-radius: 25px;
+   padding: 9.5px 25px;
+   transition: all 0.3s;
+}
+
+#product-button-1:hover{
+   text-decoration: none;
+   background-color: #6e4b35;
+   color: whitesmoke;
+}
+
+#home-product-2{
+   background: url("../sources/home/perfetto-moka-box-hp-4.webp");
+   background-size: cover;
+   border-radius: 20% 0% 0% 0%;
+   width: 100%;
+   height: 580px;
+   justify-content: center;
+   background-color: aqua;
+   transition: all 0.5s;
+}
+#home-product-2:hover{
+   border-radius: 0% 0% 0% 20%;
+}
+#home-product-2 .container{
+   position: absolute;
+   bottom: 10%;
+   padding-left: 40px;
+}
+#home-product-2 .container h3{
+   font-size: 50px;
+   margin-left: 8px;
+   line-height: 0.7;
+}
+#home-product-2 .container p{
+   font-size: 20px;
+   margin-bottom: 20px;
+   margin-left: 8px;
+}
+#product-button-2{
+   background-color: #4d3424;
+   color: whitesmoke;
+   border-radius: 25px;
+   padding: 9.5px 25px;
+   transition: all 0.3s;
+}
+
+#product-button-2:hover{
+   text-decoration: none;
+   background-color: #6e4b35;
+   color: whitesmoke;
+}
+
+.second-title-esencia{
+   text-align: center;
+   margin: 160px auto 10px auto;
+}
+.second-title-esencia h1{
+   font-size: 60px;
+   color: rgb(240, 240, 240);
+}
+.second-title-esencia p{
+   font-size: 17px;
+   color: rgb(240, 240, 240);
+   font-weight: 500;
+   margin-bottom: 40px;
+}
+.second-title-esencia a{
+   font-size: 17.5px;
+   color: rgb(240, 240, 240);
+   background-color: #5f3f2b;
+   border: 2px solid white;
+   border-radius: 25px;
+   padding: 5.5px 25px;
+   transition: all 0.3s;
+}
+.second-title-esencia a:hover{
+   text-decoration: none;
+   color: rgb(240, 240, 240);
+   background-color: #754d34;
+}
+#esencia-gallery-display img{
+   width: 100%;
+   border-radius: 0px 150px 0px 150px;
+   margin-top: 100px;
+   transition: all 0.7s;
+}
+
+
+/* Story section */
+.story-section{
+   margin-top: 165px;
+   height: 105vh;
+   background-image: url("../sources/home/banner-storia.webp");
+   background-size: cover;
+}
+
+.story-section .container{
+   position: relative;
+   top: 35%;
+}
+.story-section h1{
+   font-size: 57px;
+   color: rgb(240, 240, 240);
+   margin-bottom: 15px;
+}
+.story-section p{
+   font-size: 18px;
+   color: rgb(240, 240, 240);
+   margin-bottom: 35px;
+}
+.story-section a{
+   background-color: rgb(240, 240, 240);
+   color: rgb(36, 36, 36);
+   font-size: 17px;
+   border-radius: 25px;
+   padding: 6px 25px;
+   transition: all 0.3s;
+}
+.story-section a:hover{
+   color: rgb(240, 240, 240);
+   background-color: rgb(0, 75, 75);
+   text-decoration: none;
+}
+
+
+/* Coffee Experiences Section */
+#coffee-experience{
+   width: 100%;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   background-image: url("https://www.bialetti.com/media/wysiwyg/Coffee-Beans.png");
+   background-color: #4d3424;
+}
+.coffee-degrees{
+   padding: 120px 250px;
+   text-align: center;
+}
+.coffee-degrees h1{
+   color: rgb(223, 223, 223);
+   font-size: 48px;
+   margin-bottom: 55px;
+}
+.coffee-degrees img{
+   border-radius: 0px 35px 0px 35px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+.coffee-degrees p{
+   color: rgb(223, 223, 223);
+   font-size: 18px;
+   margin-bottom: 25px;
+}
+.coffee-degrees a{
+   padding: 8px 27px;
+   background-color: #3a251a;
+   border: 1px solid white;
+   border-radius: 25px;
+   color: rgb(223, 223, 223);
+   transition: all 0.4s;
+}
+.coffee-degrees a:hover{
+   color: rgb(223, 223, 223);
+   background-color: #553625;
+   text-decoration: none;
+}
+
+/* Coffee Roasting Section */
+#coffee-roasting{
+   text-align: center;
+   height: 100vh;
+   background-image: url('../sources/home/torrefazione.webp');
+   background-size: cover;
+   object-fit: cover;
+}
+#coffee-roasting .content{
+   position: relative;
+   top: 38%;
+}
+#coffee-roasting h1{
+   color: rgb(240, 240, 240);
+   font-size: 64px;
+}
+#coffee-roasting p{
+   color: rgb(240, 240, 240);
+   font-size: 22px;
+   margin-bottom: 30px;
+}
+#coffee-roasting a{
+   font-size: 17px;
+   color: rgb(240, 240, 240);
+   background-color: #4b2f20;
+   padding: 7px 27px;
+   border-radius: 25px;
+   transition: all 0.3s;
+}
+#coffee-roasting a:hover{
+   text-decoration: none;
+   background-color: #5e3b28;
+}
+
+/* Footer */
+footer{
+   padding: 40px 0px 20px 0px;
+   background-color: whitesmoke;
+}
+footer .container{
+   padding: 0px 80px;
+}
+footer .row .left{
+   text-align: left;
+   justify-content: left;
+}
+footer .row .left h5{
+   font-size: 23px;
+   margin-top: 10px;
+}
+footer img{
+   width: 25px;
+   margin-right: 15px;
+}
+footer .row .right{
+   text-align: center;
+}
+
+footer .row .right h5{
+   font-size: 23px;
+   margin-bottom: 20px;
+}
+footer .row .right a{
+   font-size: 16px;
+   color: rgb(240, 240, 240);
+   padding: 6px 25px;
+   background-color: #4b2f20;
+   border-radius: 25px;
+   transition: all 0.3s;
+}
+footer .row .right a:hover{
+   text-decoration: none;
+   background-color: #5e3b28;
+}
+footer .row .right i{
+   margin-right: 5px;
+   font-size: 13px;
+}
+.footer-line{
+   width: 100%;
+   height: 2px;
+   margin: 55px 0px 20px 0px;
+   background-color: #4b2f20;
+}
+.footer-copyright{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+.footer-copyright a, .footer-copyright p{
+   font-size: 18px;
+   color: black;
+}
+.footer-copyright p{
+   margin-bottom: 0px !important;
+}
+.footer-copyright p:hover{
+   cursor: default;
+}
+.footer-copyright a:hover{
+   text-decoration: none;
+   color: black;
+}
+.footer-copyright i{
+   margin-right: 5px;
+}
+
+
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1320px) {
+   .navbar-nav{
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 1130px) {
+   .navbar-nav{
+      font-size: 13px;
+   }
+   .navbar-brand img{
+      width: 125px;
+   }
+}
+
+@media (max-width: 745px) {
+   .title-esencia h1{
+      font-size: 45px;
+   }
+}
+
+@media (max-width: 770px) {
+   #esencia-gallery-display{
+      margin-top: 50px !important;
+      text-align: center !important;
+   }
+   #esencia-gallery-display img{
+      margin: 20px auto;
+      width: 100%;
+      height: 70%;
+      height: fit-content;
+   }
+}
+
+@media (max-width: 610px) {
+   .carousel-caption h3{
+      font-size: 53px !important;
+   }
+   .carousel-caption p{
+      width: 80vw;
+   }
+}
+
+@media (max-width: 380px) {
+   .carousel-caption h3{
+      font-size: 45px !important;
+   }
+   .carousel-caption p{
+      font-size: 22px;
+   }
+}
+
+
+@media (max-width: 690px) {
+   .second-title-esencia h1{
+      font-size: 45px !important;
+   }
+}
+
+@media (max-width: 500px) {
+   .second-title-esencia h1{
+      font-size: 32px !important;
+   }
+   .second-title-esencia p{
+      font-size: 15px !important;
+      padding: 0px 10px !important;
+   }
+   .story-section h1{
+      font-size: 45px !important;
+   }
+   .story-section p{
+      font-size: 16px !important;
+      padding: 0px 5px !important;
+   }
+
+   #coffee-roasting h1{
+      font-size: 50px !important;
+   }
+   #coffee-roasting p{
+      font-size: 16px !important;
+   }
+}
+
+@media (max-width: 1145px) {
+   .coffee-degrees{
+      padding: 120px 150px;
+   }
+}
+@media (max-width: 810px) {
+   .coffee-degrees{
+      padding: 100px 100px;
+   }
+}
+@media (max-width: 768px) {
+   .coffee-degrees{
+      padding: 100px 30px 40px 30px;
+   }
+   .coffee-degrees .col-md-4{
+      margin-bottom: 65px !important;
+   }
+   footer .row .left{
+      justify-content: center !important;
+      margin-bottom: 30px;
+   }
+   footer .container{
+      padding: 0 !important;
+   }
+   footer .row .left h5{
+      font-size: 19px;
+      margin-top: 30px;
+   }
+   footer .row .right h5{
+      font-size: 19px;
+   }
+}
