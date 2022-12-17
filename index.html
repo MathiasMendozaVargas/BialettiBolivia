@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bialetti Bolivia</title>
+   <!-- CSS STYLE FILE -->
+   <link rel="stylesheet" href="/resources/css/style.css">
+   <!-- Font Awesome Icons -->
+   <script src="https://kit.fontawesome.com/919c0a277c.js" crossorigin="anonymous"></script>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+   <!-- jQuery library -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+   <!-- Popper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <section id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" style="cursor: pointer;" onclick="redirect('./index.html')"><img src="./resources/sources/logo.webp" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('../srcT/moka-express.html')" href="#"> MOKA EXPRESS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('../srcT/bialetti-coffee-roasting.html')" href="#">TOSTADO DE CAFÉ BIALETTI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('../srcT/products.html')" href="#">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('../srcT/news.html')" href="#">NOTICIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onClick="redirect('../srcT/inspiration.html')" href="#">INSPIRACIÓN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="redirect('../srcT/history.html')">NUESTRA HISTORIA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <!-- <li data-target="#home-carousel" data-slide-to="1"></li> -->
+        <li data-target="#home-carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view">
+            <img class="d-block w-100" src="./resources/sources/home-carousel/01_hp_moka_sound_slider_4.webp"
+              alt="First slide">
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive">El sonido Moka</h3>
+            <p>Descubre el despertar más hermoso</p>
+            <a onClick="redirect('../srcT/moka-express.html')" href="#">CONOCER MÁS</a>
+          </div>
+        </div>
+        <!-- <div class="carousel-item">
+          <div class="view">
+            <img class="d-block w-100" src="./resources/sources/home-carousel/perfetto-moka-5.webp"
+              alt="Second slide">
+            <div class="mask rgba-black-strong"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive">Perffeto Moka</h3>
+            <p>El café molido Bialetti para los amantes de Moka.</p>
+            <a href="">FIND OUT MORE</a>
+          </div>
+        </div> -->
+        <div class="carousel-item">
+          <div class="view">
+            <img class="d-block w-100" src="./resources/sources/home-carousel/slider-moka-express-estero-darker_6.webp"
+              alt="Third slide">
+            <div class="mask rgba-black-slight"></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive">Moka Express</h3>
+            <p>La cafetera Moka italiana original, desde 1933.</p>
+            <a onClick="redirect('../srcT/moka-express.html')" href="#">CONOCER MÁS</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+      </a>
+      <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+      </a>
+    </div>
+  </section>
+  <section id="esenciaItaliana">
+    <div class="title-esencia">
+      <img id="logoEsencia" src="./resources/sources/logo-bialetti-hp.webp" alt="">
+      <p id="under-text">Desde 1919</p>
+      <h1>"El mejor café italiano<br/>en Bolivia"</h1>
+      <div class="descubrelinesec">
+        <a href="">Descubre la experiencia Bialetti</a>
+        <div class="underline-link"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="home-product-1">
+          <div class="container">
+            <h3>Moka Express</h3>
+            <p>Desde 1933, la cafetera que nos une!</p> 
+            <a style="cursor: pointer;" id="product-button-1">Descubre Más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="home-product-2">
+          <div class="container">
+            <h3>Perffeto Moka</h3>
+            <p>El café molido Bialetti para los amantes de moka</p>
+            <a style="cursor: pointer;" id="product-button-2">Descubre Más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second-title-esencia">
+      <h1>"Un producto, una pieza<br/>de nuestra historia"</h1>
+      <p>Prueba el sabor de nuestra tradición que promueve inovación</p>
+      <a id="second-title-esencia-a" style="cursor: pointer; color: rgb(244, 244, 244);">Conoce Más</a>
+    </div>
+    <div id="esencia-gallery-display" class="row">
+      <div class="col-md-3">
+        <img src="./resources/sources/home/esenciaGallery1.webp" alt="">
+      </div>
+      <div class="col-md-3">
+        <img src="./resources/sources/home/esenciaGallery2.webp" alt="">
+      </div>
+      <div class="col-md-3">
+        <img src="./resources/sources/home/esenciaGallery3.webp" alt="">
+      </div>
+      <div class="col-md-3">
+        <img src="./resources/sources/home/esenciaGallery4.webp" alt="">
+      </div>
+    </div>
+    <div class="story-section text-center">
+      <div class="container">
+        <h1>Una historia escrita juntos</h1>
+        <p>Durante más de 90 años, Bialetti ha representado<br/>el sabor de los momentos compartidos.</p>
+        <a style="cursor: pointer; color: black;">Conoce Más</a>
+      </div>
+    </div>
+  </section>
+  <section id="coffee-experience">
+    <div class="coffee-degrees">
+      <h1>"Vive nuestra experiencia en 360 grados"</h1>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="./resources/sources/home/featured-BUONGIORNO-1_1.webp" alt="">
+          <p>Comenzar el día con un café: un ritual italiano único en sabor</p>
+          <a style="cursor: pointer; color: rgb(244, 244, 244);">Conoce Más</a>
+        </div>
+        <div class="col-md-4">
+          <img src="./resources/sources/home/featured-FONDI-CAFFE_1.webp" alt="">
+          <p>Comenzar el día con un café: un ritual italiano único en sabor</p>
+          <a style="cursor: pointer; color: rgb(244, 244, 244);">Conoce Más</a>
+        </div>
+        <div class="col-md-4">
+          <img src="./resources/sources/home/featured-SOTTO-COPERCHIO-1_1.webp" alt="">
+          <p>Comenzar el día con un café: un ritual italiano único en sabor</p>
+          <a style="cursor: pointer; color: rgb(244, 244, 244);">Conoce Más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="coffee-roasting">
+    <div class="content">
+      <h1>Café Tostado Bialetti</h1>
+      <p>Prueba el Bialetti para un mejor sabor</p>
+      <a style="cursor: pointer; color: rgb(244, 244, 244);">Conoce Más</a>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="row left">
+            <img src="./resources/sources/logo-footer_4x (1).webp" alt="">
+            <h5>La esencia de la<br/>cultura del café italiano.</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right">
+            <h5>Contactos de la empresa</h5>
+            <a style="cursor: pointer; color: rgb(244, 244, 244);"><i class="fa-solid fa-pencil"></i>Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-copyright">
+      <a href="https://github.com/MathiasMendozaVargas" target="_blank"><i class="fa-brands fa-github"></i>Contactar Desarrollador</a>
+      <p><i class="fa-regular fa-copyright"></i>Hecho por Mathias Mendoza</p>
+    </div>
+  </footer>
+</body>
+<script>
+  function redirect(loc){
+    window.location.href=loc;
+  }
+</script>
+</html>
