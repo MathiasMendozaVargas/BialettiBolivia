@@ -18,12 +18,12 @@ body{
 
 .navbar{
    width: 100%;
-   height: 90px;
+   height: 75px;
    background-color: white !important;
 }
 
 .navbar-brand img{
-   width: 145px;
+   width: 125px;
 }
 .navbar-nav{
    font-size: 19px;
