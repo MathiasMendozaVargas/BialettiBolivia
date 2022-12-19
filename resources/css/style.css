@@ -24,6 +24,7 @@ body{
 
 .navbar-brand img{
    width: 125px;
+   margin-bottom: 20px;
 }
 .navbar-nav{
    font-size: 19px;
