@@ -1,0 +1,53 @@
+.products-section{
+    width: 100%;
+    padding: 130px 0px 30px 0px;
+    background-color: #4d3424;
+    text-align: center;
+}
+.title h1{
+    color: rgb(228, 228, 228);
+    margin-bottom: 50px;
+}
+
+.products-body .icon-head{
+    font-size: 30px;
+    text-align: left;
+}
+.products-body .card{
+    border-radius: 15px;
+    width: 80%;
+    margin: auto auto;
+    margin-bottom: 40px;
+}
+.card-head{
+    display: flex;
+}
+.left{
+    width: 20%;
+    text-align: left;
+    padding: 20px 0px 0px 25px;
+}
+.right{
+    width: 80%;
+    text-align: right;
+    padding: 5px 5px 0px 0px;
+}
+.products-body .card-logo{
+    width: 30px;
+}
+.card-title{
+    font-weight: bold;
+}
+.card .fa-star{
+    color: #4d3424;
+}
+.fa-coffee-bean{
+    color: white;
+}
+.card .fa-star-half-stroke{
+    color: #4d3424;
+}
+.products-body img{
+    width: 100%;
+    margin: 0 auto;
+}
