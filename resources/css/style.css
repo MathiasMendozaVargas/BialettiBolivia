@@ -20,10 +20,12 @@ body{
    width: 100%;
    height: 75px;
    background-color: white !important;
+   padding: 0 !important;
 }
 
 .navbar-brand img{
    width: 125px;
+   margin-left: 17px;
 }
 .navbar-nav{
    font-size: 19px;
@@ -63,6 +65,9 @@ body{
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
    color: rgb(194, 194, 194) !important;
+}
+.navbar-toggler{
+   margin-right: 15px;
 }
 .navbar-toggler:focus{
    outline: none;
