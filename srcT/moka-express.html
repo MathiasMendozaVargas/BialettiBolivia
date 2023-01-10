@@ -70,7 +70,7 @@
       <div class="row text-center">
         <div class="col-md-6">
           <div class="row left">
-            <img src="./resources/sources/logo-footer_4x (1).webp" alt="">
+            <img src="../resources/sources/logo-footer_4x (1).webp" alt="">
             <h5>La esencia de la<br/>cultura del café italiano.</h5>
           </div>
         </div>
@@ -89,9 +89,19 @@
     </div>
   </footer>
 </body>
+<!-- Script Source Files -->
 <script>
   function redirect(loc){
-    window.location.href=loc;
+    setTimeout(() => {
+      window.location.href=loc;
+    }, 1400)
   }
+</script>
+<script>
+  $('.navbar-collapse a').click(function(){
+    setTimeout(function(){
+      $(".navbar-collapse").collapse('hide');
+    }, 800);
+  });
 </script>
 </html>
