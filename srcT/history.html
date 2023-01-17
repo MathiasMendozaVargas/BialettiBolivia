@@ -7,6 +7,8 @@
    <title>Bialetti Bolivia</title>
    <!-- CSS STYLE FILE -->
    <link rel="stylesheet" href="/resources/css/style.css">
+   <!-- HISTORY CSS STYLE FILE -->
+   <link rel="stylesheet" href="/resources/css/history-page.css">
    <!-- Font Awesome Icons -->
    <script src="https://kit.fontawesome.com/919c0a277c.js" crossorigin="anonymous"></script>
    <!-- Latest compiled and minified CSS -->
@@ -54,17 +56,363 @@
       </div>
     </nav>
   </section>
-  <section id="esenciaItaliana">
-    <div class="title-esencia">
-      <img id="logoEsencia" src="../resources/sources/logo-bialetti-hp.webp" alt="">
-      <p id="under-text">HISTORIA</p>
-      <h1 class="under-dev-h1"><i class="fa-solid fa-screwdriver-wrench"></i> Bajo Construcción <i class="fa-solid fa-screwdriver-wrench"></i></h1>
-      <div class="descubrelinesec">
-        <a onclick="redirect('../index.html')" href="#">Volver a página principal</a>
-        <div class="underline-link"></div>
+  <main id="maincontent" class="page-main-full-width">
+    <a id="contentarea" tabindex="-1"></a>
+    <div class="page messages">
+      <div data-placeholder="messages"></div>
+      <div data-bind="scope: 'messages'">
+        <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+        <!-- /ko -->
+        <!-- ko if: messages().messages && messages().messages.length > 0 -->
+        <!-- /ko -->
       </div>
     </div>
-  </section>
+    <div class="columns">
+      <div class="column main">
+        <input name="form_key" type="hidden" value="vRnD7TPjCnDhXHdN">
+        <div id="authenticationPopup" data-bind="scope:'authenticationPopup', style: {display: 'none'}" style="display: none;">
+          <script>
+          window.authenticationPopup = {
+            "autocomplete": "off",
+            "customerRegisterUrl": "https:\/\/www.bialetti.com\/ee_en\/customer\/account\/create\/",
+            "customerForgotPasswordUrl": "https:\/\/www.bialetti.com\/ee_en\/customer\/account\/forgotpassword\/",
+            "baseUrl": "https:\/\/www.bialetti.com\/ee_en\/"
+          }
+          </script>
+          <!-- ko template: getTemplate() -->
+          <!-- /ko -->
+        </div>
+        <script>
+        require(['jquery', 'Magefan_Blog/js/lib/mfblogunveil', 'domReady!'], function($) {
+          $('.mfblogunveil').mfblogunveil();
+        });
+        </script>
+        <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+          <style>
+          .pre-footer {
+            display: none;
+          }
+          
+          main#maincontent {
+            overflow-y: hidden;
+          }
+          </style>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <script>
+              require(['jquery', 'bootstrap', ], function($) {
+                $("#years-list ul li a").on("click", function(e) {
+                  e.preventDefault();
+                  $('html,body').animate({
+                    scrollTop: $($(this).attr('href')).position().top
+                  }, 'slow');
+                });
+              });
+              </script>
+              
+              <style>
+              .story-text-image {
+                padding-left: 15px;
+                padding-right: 15px;
+              }
+              
+              .story-text-image img {
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 100%;
+                padding-bottom: 55px;
+              }
+              
+              @media screen and (min-width:576px) {
+                .story-text-image {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+                .story-text-image .col-12 {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+              }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="full-width mb-5 mb-md-0">
+                <div class="hero hero--big absolute-content"> <img src="https://www.bialetti.com/media/wysiwyg/banner-storia.png" alt="">
+                  <div class="content">
+                    <h1 class="text-l white text-center font-weight-bold">La Historia de Bialetti</h1> </div>
+                  <div class="content content--paragraph">
+                    <p class="text-n text-center white">Descubre más sobre la impactante historia de Bialetti y como a llegado a ser una empresa de café con alcance a nivel mundial</p>
+                  </div>
+                </div>
+              </section>
+              <style>
+              .hero {
+                overflow: hidden;
+              }
+              
+              .hero img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              
+              .hero--big {
+                height: 615px;
+              }
+              
+              .hero .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                left: 0;
+                transform: translateY(-50%);
+              }
+              
+              .hero .content.content--paragraph {
+                position: absolute;
+                top: 85%;
+              }
+              
+              .content--paragraph p {
+                padding-right: 25px;
+                padding-left: 25px;
+              }
+              
+              section.m-6rem {
+                margin-bottom: 6rem!important;
+              }
+              
+              @media screen and (min-width:576px) {
+                .hero--big {
+                  height: 900px;
+                }
+              }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-1919">
+                <div class="row">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">1919</p>
+                    <h5 class="text-m font-weight-bold">El nacimiento de Bialetti</h5>
+                    <p class="text-s2 beige-700">En una pequeña aldea de Omegna (Verbania), Crusinallo, Alfonso Bialetti abrió un taller para la fabricación de productos semiacabados de aluminio. La empresa creció rápidamente para convertirse en Alfonso Bialetti & Co. Una fundición en Conchiglia: un taller para el estudio, diseño y creación de productos terminados y listos para la venta.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/storia-box-1-new-resize.jpg" alt="" class="image_right"> </div>
+                </div>
+              </section>
+              <style>
+              .story-text-image {
+                padding-left: 15px;
+                padding-right: 15px;
+              }
+              
+              .story-text-image h5 {
+                text-transform: uppercase;
+              }
+              
+              .story-text-image .row img.image_right {
+                border-radius: 0 0 0 30%;
+              }
+              
+              .story-text-image .row img.image_left {
+                border-radius: 0 30% 0 0!important;
+              }
+              
+              .story-text-image img {
+                width: 100%;
+              }
+              
+              @media screen and (min-width:576px) {
+                .story-text-image {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
+                .story-text-image .col-12,
+                .story-text-image img {
+                  padding-left: 0px!important;
+                  padding-right: 0px!important;
+                }
+              }
+              </style>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-1933">
+                <div class="row flex-md-row-reverse">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">1933</p>
+                    <h5 class="text-m font-weight-bold">La Moka es lanzada</h5>
+                    <p class="text-s2 beige-700">A Alfonso Bialetti se le ocurre la brillante idea de Moka Express: esto revolucionaría la forma de hacer café en casa, quedándose con generaciones de italianos al despertar, llevando a la empresa a convertirse en uno de los principales productores italianos, gracias también a la ambiciosa determinación de su hijo Renato. ¿El nombre? Proviene de la ciudad de Mokha en Yemen, una de las principales y más famosas zonas productoras de café a nivel mundial.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_1933.jpg" alt="" class="image_left"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-1958">
+                <div class="row">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">1958</p>
+                    <h5 class="text-m font-weight-bold">EL BIGOTÓN APARECE POR PRIMERA VEZ</h5>
+                    <p class="text-s2 beige-700">La marca Bialetti ganó reputación a través de la publicidad en el programa de televisión Carosello y las campañas con el logotipo del "Hombre con bigote". El logotipo, un dibujo a lápiz de Paul Campani, todavía se usa en el logotipo y los productos de Gruppo Bialetti Industrie. El eslogan "¡Oh, sí, sí... parece fácil (hacer un buen café)!" también se hizo popular.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_1958.jpg" alt="" class="image_right"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-1993">
+                <div class="row flex-md-row-reverse">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">1993</p>
+                    <h5 class="text-m font-weight-bold">RONDINE TOMA EL CONTROL DE BIALETTI</h5>
+                    <p class="text-s2 beige-700">Bialetti y Rondine se dedican a la calidad y la innovación, lo que llevó al presidente Francesco Ranzoni a comprar Alfonso Bialetti & Co. Cinco años después, Rondine y Alfonso Bialetti & Co. se fusionaron.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_1993.jpg" alt="" class="image_left"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2006">
+                <div class="row">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2006</p>
+                    <h5 class="text-m font-weight-bold">SE CREA EL PROYECTO RETAIL</h5>
+                    <p class="text-s2 beige-700">Llevar la calidad, el estilo y el diseño de la gama Bialetti directamente a los clientes: este es el razonamiento detrás del proyecto Bialetti Store, con la apertura de las primeras tiendas minoristas monomarca.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_2006.jpg" alt="" class="image_right"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2007">
+                <div class="row flex-md-row-reverse">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2007</p>
+                    <h5 class="text-m font-weight-bold">EL LANZAMIENTO A LA BOLSA DE VALORES</h5>
+                    <p class="text-s2 beige-700">Una fecha histórica y significativa para nosotros: el 27 de julio, Bialetti Industrie se convirtió en una empresa que cotiza en el mercado de valores en línea de la Bolsa de Valores de Italia.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_2007.jpg" alt="" class="image_left"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2010">
+                <div class="row">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2010</p>
+                    <h5 class="text-m font-weight-bold">BIALETTI LANZA EL SISTEMA ESPRESSO</h5>
+                    <p class="text-s2 beige-700">La experiencia de Bialetti en el café los llevó a ingresar al mercado de las máquinas de espresso con las cápsulas I Caffe d'Italia, lo que permitió una exploración sensorial de la excelencia del café espresso italiano y las variaciones en el gusto y los hábitos de norte a sur.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_2010.jpg" alt="" class="image_right"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2016">
+                <div class="row flex-md-row-reverse">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2016</p>
+                    <h5 class="text-m font-weight-bold">LA TRADICIÓN SE REINVENTA</h5>
+                    <p class="text-s2 beige-700">El equipo de R&D de Bialetti actualizó el Moka para su uso en placas eléctricas, vitrocerámicas y cocinas de inducción mediante el uso de una combinación de aluminio y acero inoxidable en sus piezas.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_2016.jpg" alt="" class="image_left"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2020">
+                <div class="row">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2020</p>
+                    <h5 class="text-m font-weight-bold">UNA FUENTE DE ALEGRÍA CON GIOIA</h5>
+                    <p class="text-s2 beige-700">La gama de máquinas de espresso Bialetti se enriquece con la llegada de Gioia. Ultracompacto (menos de 34 cm de profundidad) e inteligente, trae el sabor del verdadero café espresso italiano a las cocinas de los italianos. Y también es ecológico: las cápsulas son, de hecho, de aluminio reciclable.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_2020.jpg" alt="" class="image_right"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2021">
+                <div class="row flex-md-row-reverse">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2021</p>
+                    <h5 class="text-m font-weight-bold">Perfetto Moka:<br>El café Bialetti para los amantes de Moka.</h5>
+                    <p class="text-s2 beige-700">Inspirado en una pasión genuina y un conocimiento profundo del producto, Perfetto Moka ha sido creado para convertirse en el café Bialetti para los amantes de Moka. El proceso de molienda está diseñado y calibrado para uso Moka. Luca Argentero es el embajador de la marca elegido.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="https://www.bialetti.com/media/wysiwyg/22_storia_2021.jpg" alt="" class="image_left"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div data-content-type="block" data-appearance="default" data-element="main">
+          <div class="widget block block-static-block">
+            <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
+              <section class="story-text-image full-width mb-6 mb-md-0" id="story-2020">
+                <div class="row">
+                  <div class="col-12 col-sm-6 text-center align-self-center">
+                    <p class="text-s2">2023</p>
+                    <h5 class="text-m font-weight-bold">Bialetti llega al pueblo boliviano</h5>
+                    <p class="text-s2 beige-700">Johanna Vargas y Gerardo Pizzi traen la empresa Bialetti al pueblo boliviano, empezando a distribuir productos Bialetti en Santa Cruz de la Sierra, con proyección a expandir la empresa Bialetti a toda Bolivia.</p>
+                  </div>
+                  <div class="col-12 col-sm-6"> <img src="../resources/sources/history/santaCruz.jpg" alt="" class="image_right"> </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer>
     <div class="container">
       <div class="row text-center">
