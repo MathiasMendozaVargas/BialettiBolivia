@@ -4,7 +4,7 @@
 
 /* CUP ANIMATION */
 .cup {
-   margin-top: 100px !important;
+   margin-top: 0px !important;
    position: relative;
    margin: auto auto;
    width: 100px;
@@ -625,10 +625,16 @@ footer .row .right i{
       margin-top: 50px !important;
       text-align: center !important;
    }
+   .gallery-left{
+      margin: auto auto !important;
+   }
+   .gallery-right{
+      margin: auto auto !important;
+   }
    #esencia-gallery-display img{
       margin: 20px auto;
       width: 80% !important;
-      height: 70%;
+      height: 80% !important;
       height: fit-content;
    }
    .gallery-left{
