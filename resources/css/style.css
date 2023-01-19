@@ -22,7 +22,17 @@ body{
    background-color: white !important;
    padding: 0 !important;
 }
-
+.navbar-light .navbar-toggler{
+   border-color: rgba(0,0,0,0) !important;
+}
+.navbar-light .navbar-toggler-icon{
+   width: 48px;
+   height: 41px;
+   background-image: url("../sources/hamburguer.png") !important;
+}
+.navbar-toggler{
+   margin: 0px 5px 0px 0px !important;
+}
 .navbar-brand img{
    width: 125px;
    margin-left: 17px;

@@ -35,19 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" onClick="redirect('./moka-express.html')" href="#">MOKA EXPRESS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onClick="redirect('./bialetti-coffee-roasting.html')" href="#">TOSTADO DE CAFÉ BIALETTI</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" onClick="redirect('./products.html')" href="#">PRODUCTOS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onClick="redirect('./news.html')" href="#">NOTICIAS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onClick="redirect('./inspiration.html')" href="#">INSPIRACIÓN</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" onClick="redirect('../index.html')" href="#">HOME</a>
@@ -61,32 +49,10 @@
     <div class="page messages">
       <div data-placeholder="messages"></div>
       <div data-bind="scope: 'messages'">
-        <!-- ko if: cookieMessages && cookieMessages.length > 0 -->
-        <!-- /ko -->
-        <!-- ko if: messages().messages && messages().messages.length > 0 -->
-        <!-- /ko -->
       </div>
     </div>
     <div class="columns">
       <div class="column main">
-        <input name="form_key" type="hidden" value="vRnD7TPjCnDhXHdN">
-        <div id="authenticationPopup" data-bind="scope:'authenticationPopup', style: {display: 'none'}" style="display: none;">
-          <script>
-          window.authenticationPopup = {
-            "autocomplete": "off",
-            "customerRegisterUrl": "https:\/\/www.bialetti.com\/ee_en\/customer\/account\/create\/",
-            "customerForgotPasswordUrl": "https:\/\/www.bialetti.com\/ee_en\/customer\/account\/forgotpassword\/",
-            "baseUrl": "https:\/\/www.bialetti.com\/ee_en\/"
-          }
-          </script>
-          <!-- ko template: getTemplate() -->
-          <!-- /ko -->
-        </div>
-        <script>
-        require(['jquery', 'Magefan_Blog/js/lib/mfblogunveil', 'domReady!'], function($) {
-          $('.mfblogunveil').mfblogunveil();
-        });
-        </script>
         <div data-content-type="html" data-appearance="default" data-element="main" data-decoded="true">
           <style>
           .pre-footer {
@@ -442,7 +408,7 @@
   function redirect(loc){
     setTimeout(() => {
       window.location.href=loc;
-    }, 1200)
+    }, 900)
   }
 </script>
 <script>
