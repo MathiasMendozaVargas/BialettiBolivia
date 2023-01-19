@@ -9,7 +9,7 @@
    margin: auto auto;
    width: 100px;
    height: 120px;
-   background: #fff;
+   background: whitesmoke;
    border-bottom-left-radius: 20px;
    border-bottom-right-radius: 20px;
 }
@@ -23,7 +23,7 @@
    width: 100%;
    border-radius: 50%;
    background: #c16d31;
-   border: 7px solid #fff;
+   border: 7px solid whitesmoke;
    box-sizing: border-box;
    transform: translateY(-50%);
    box-shadow: inset 0 0 15px rgba(0, 0, 0, .5);
@@ -38,7 +38,7 @@
    width: 80px;
    border-radius: 50%;
    background: transparent;
-   border: 12px solid #fff;
+   border: 12px solid whitesmoke;
    box-sizing: border-box;
    transform: translateY(-50%);
 }
@@ -56,7 +56,7 @@
    list-style: none;
    width: 2px;
    height: 40px;
-   background: #fff;
+   background: whitesmoke;
    float: left;
    margin: 10px;
    filter: blur(3px);
