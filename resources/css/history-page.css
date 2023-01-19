@@ -2841,6 +2841,9 @@ body{
  .hero--big {
 	 height: 100vh !important;
 }
+.hero-book{
+	width: 10% !important;
+}
  @media (min-width: 576px) {
 	 .hero--big::after {
 		 content: url("../icons/Icon-scroll-black.svg");
@@ -2983,6 +2986,12 @@ body{
 }
  body.customer-account-create #maincontent .form-create-account > fieldset.create.info > div, body.customer-account-create #maincontent .form-create-account > fieldset.create.account > div {
 	 width: 100%;
+}
+@media (max-width: 500px) {
+	.hero-book{
+		width: 30% !important;
+	}
+	
 }
  @media (min-width: 576px) {
 	 body.customer-account-create #maincontent .form-create-account > fieldset.create.info > div.field-name-firstname, body.customer-account-create #maincontent .form-create-account > fieldset.create.account > div.field-name-firstname, body.customer-account-create #maincontent .form-create-account > fieldset.create.info > div.field-name-lastname, body.customer-account-create #maincontent .form-create-account > fieldset.create.account > div.field-name-lastname, body.customer-account-create #maincontent .form-create-account > fieldset.create.info > div.password, body.customer-account-create #maincontent .form-create-account > fieldset.create.account > div.password, body.customer-account-create #maincontent .form-create-account > fieldset.create.info > div.confirmation, body.customer-account-create #maincontent .form-create-account > fieldset.create.account > div.confirmation {
