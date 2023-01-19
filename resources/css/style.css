@@ -279,7 +279,7 @@ body{
 
 .second-title-esencia{
    text-align: center;
-   margin: 160px auto 10px auto;
+   margin: 80px auto 10px auto;
 }
 .second-title-esencia h1{
    font-size: 60px;
@@ -306,7 +306,7 @@ body{
    background-color: #754d34;
 }
 #esencia-gallery-display img{
-   width: 100%;
+   width: 100% !important;
    border-radius: 0px 150px 0px 150px;
    margin-top: 100px;
    transition: all 0.7s;
@@ -315,7 +315,7 @@ body{
 
 /* Story section */
 .story-section{
-   margin-top: 165px;
+   margin-top: 85px;
    height: 105vh;
    background-image: url("../sources/home/banner-storia.webp");
    background-size: cover;
@@ -530,9 +530,15 @@ footer .row .right i{
    }
    #esencia-gallery-display img{
       margin: 20px auto;
-      width: 100%;
+      width: 80% !important;
       height: 70%;
       height: fit-content;
+   }
+   .gallery-left{
+      text-align: left !important;
+   }
+   .gallery-right{
+      text-align: right !important;
    }
 }
 
