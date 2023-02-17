@@ -21,6 +21,10 @@
    <!-- Latest compiled JavaScript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+   <!-- AOS Effects -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
   <section id="home">
@@ -54,7 +58,7 @@
               alt="First slide">
             <div class="mask rgba-black-light"></div>
           </div>
-          <div class="carousel-caption">
+          <div data-aos="fade-left" class="carousel-caption">
             <h3 class="h3-responsive">El sonido Moka</h3>
             <p>Descubre el despertar más hermoso</p>
             <a onClick="redirect('../srcT/history.html')" href="#">VER HISTORIA</a>
@@ -93,10 +97,10 @@
   </section>
   <section id="esenciaItaliana">
     <div class="title-esencia">
-      <img id="logoEsencia" src="./resources/sources/logo-bialetti-hp.webp" alt="">
-      <p id="under-text">Desde 1919</p>
-      <h1>"El mejor café italiano<br/>en Bolivia"</h1>
-      <div class="cup">
+      <img data-aos="zoom-in" id="logoEsencia" src="./resources/sources/logo-bialetti-hp.webp" alt="">
+      <p data-aos="fade-up" id="under-text">Desde 1919</p>
+      <h1 data-aos="fade-left">"El mejor café italiano<br/>en Bolivia"</h1>
+      <div data-aos="fade-right" class="cup">
         <ul>
           <li></li>
           <li></li>
@@ -112,68 +116,80 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <div id="home-product-1">
+        <div data-aos="fade-right" id="home-product-1">
         </div>
       </div>
       <div class="col-md-6">
-        <div id="home-product-2">
+        <div data-aos="fade-left" id="home-product-2">
         </div>
       </div>
     </div>
     <div class="second-title-esencia">
-      <h1>"Un producto, una pieza<br/>de nuestra historia"</h1>
-      <p>Prueba el sabor de nuestra tradición que promueve inovación</p>
-      <a onClick="redirect('../srcT/history.html')" id="second-title-esencia-a" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Historia</a>
+      <h1 data-aos="fade-right">"Un producto, una pieza<br/>de nuestra historia"</h1>
+      <p data-aos="fade-left">Prueba el sabor de nuestra tradición que promueve inovación</p>
+      <div data-aos="fade-right">
+        <a onClick="redirect('../srcT/history.html')" id="second-title-esencia-a" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Historia</a>
+      </div>
     </div>
     <div id="esencia-gallery-display" class="row">
       <div class="col-md-3 gallery-left">
-        <img src="./resources/sources/home/esenciaGallery1.webp" alt="">
+        <img data-aos="fade-left" src="./resources/sources/home/esenciaGallery1.webp" alt="">
       </div>
       <div class="col-md-3 gallery-right">
-        <img src="./resources/sources/home/esenciaGallery2.webp" alt="">
+        <img data-aos="fade-right" src="./resources/sources/home/esenciaGallery2.webp" alt="">
       </div>
       <div class="col-md-3 gallery-left">
-        <img src="./resources/sources/home/esenciaGallery3.webp" alt="">
+        <img data-aos="fade-left" src="./resources/sources/home/esenciaGallery3.webp" alt="">
       </div>
       <div class="col-md-3 gallery-right">
-        <img src="./resources/sources/home/esenciaGallery4.webp" alt="">
+        <img data-aos="fade-right" src="./resources/sources/home/esenciaGallery4.webp" alt="">
       </div>
     </div>
     <div class="story-section text-center">
       <div class="container">
-        <h1>Una historia escrita juntos</h1>
-        <p>Durante más de 90 años, Bialetti ha representado<br/>el sabor de los momentos compartidos.</p>
-        <a onClick="redirect('../srcT/history.html')" style="cursor: pointer; color: black;">Historia de Bialetti</a>
+        <h1 data-aos="fade-left">Una historia escrita juntos</h1>
+        <p data-aos="fade-right">Durante más de 90 años, Bialetti ha representado<br/>el sabor de los momentos compartidos.</p>
+        <div data-aos="fade-up">
+          <a onClick="redirect('../srcT/history.html')" style="cursor: pointer; color: black;">Historia de Bialetti</a>
+        </div>
       </div>
     </div>
   </section>
   <section id="coffee-experience">
     <div class="coffee-degrees">
-      <h1>"Vive nuestra experiencia en 360 grados"</h1>
+      <h1 data-aos="fade-down">"Vive nuestra experiencia en 360 grados"</h1>
       <div class="row text-center">
         <div class="col-md-4">
-          <img src="./resources/sources/home/featured-BUONGIORNO-1_1.webp" alt="">
-          <p>Comenzar el día con un café: un ritual italiano único en sabor</p>
-          <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+          <img data-aos="fade-right" src="./resources/sources/home/featured-BUONGIORNO-1_1.webp" alt="">
+          <p data-aos="fade-left">Comenzar el día con un café: un ritual italiano único en sabor</p>
+          <div data-aos="zoom-in">
+            <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <img src="./resources/sources/home/featured-FONDI-CAFFE_1.webp" alt="">
-          <p>Comenzar el día con un café: un ritual italiano único en sabor</p>
-          <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+          <img data-aos="fade-left" src="./resources/sources/home/featured-FONDI-CAFFE_1.webp" alt="">
+          <p data-aos="fade-right">Comenzar el día con un café: un ritual italiano único en sabor</p>
+          <div data-aos="zoom-in">
+            <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+          </div>
         </div>
         <div class="col-md-4">
-          <img src="./resources/sources/home/featured-SOTTO-COPERCHIO-1_1.webp" alt="">
-          <p>Comenzar el día con un café: un ritual italiano único en sabor</p>
-          <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+          <img data-aos="fade-right" src="./resources/sources/home/featured-SOTTO-COPERCHIO-1_1.webp" alt="">
+          <p data-aos="fade-left">Comenzar el día con un café: un ritual italiano único en sabor</p>
+          <div data-aos="zoom-in">
+            <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <section id="coffee-roasting">
     <div class="content">
-      <h1>Café Tostado Bialetti</h1>
-      <p>Prueba el Bialetti para un mejor sabor</p>
-      <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+      <h1 data-aos="fade-down">Café Tostado Bialetti</h1>
+      <p data-aos="fade-right">Prueba el Bialetti para un mejor sabor</p>
+      <div data-aos="fade-up">
+        <a onClick="redirect('../srcT/products.html')" style="cursor: pointer; color: rgb(244, 244, 244);">Ver Productos</a>
+      </div>
     </div>
   </section>
   <footer>
@@ -204,6 +220,7 @@
   </footer>
 </body>
 <!-- Script Source Files -->
+<script src="./resources/js/main.js"></script>
 <script>
   function redirect(loc){
     setTimeout(() => {

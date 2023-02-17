@@ -343,6 +343,7 @@ body{
 	 font-size: 3.4rem;
 	 line-height: 3.4375rem;
 	 padding: 0px 10px;
+	 padding-bottom: 80px !important;
 }
  .text-xl {
 	 font-size: 5.625rem;
